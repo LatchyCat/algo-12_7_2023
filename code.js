@@ -66,7 +66,21 @@ const expectedB = [1, 2, 3, "a", "b"];
  */
 function concat(items1, items2) {
     // code here
-}
+    let empty = [];
+
+    // for (let i = 0; i < items1.length; i++) {
+    //     empty.push(items1[i])
+    // };
+
+    // for (let j = 0; j < items2.length; j++) {
+    //     empty.push(items2[j])
+    // }
+
+    items1.forEach( (element) => empty.push(element));
+    items2.forEach( (element) => empty.push(element));
+
+    return empty;
+};
 
 // Tests
 console.log("\n************Algo #2***********");
